@@ -60,18 +60,6 @@
             text-align: center;
         }
         
-        .logo-container {
-            margin-bottom: 40px;
-            animation: fadeInDown 1s ease;
-        }
-        
-        .logo-container img {
-            max-width: 350px;
-            width: 100%;
-            height: auto;
-            filter: drop-shadow(0 10px 40px rgba(168, 85, 247, 0.5));
-        }
-        
         h1 {
             font-size: 3.5em;
             margin-bottom: 20px;
@@ -392,13 +380,14 @@
     <div class="particles" id="particles"></div>
     
     <div class="container">
-        <div class="logo-container">
-            <img src="logo.png" alt="Money Badger Logo">
+        <!-- Hero Badger -->
+        <div style="margin: 0 auto 40px; max-width: 400px;">
+            <img src="logo.png" alt="Money Badger" style="width: 280px; height: 280px; opacity: 0.9; filter: drop-shadow(0 15px 50px rgba(168, 85, 247, 0.6)); animation: float-badger 6s ease-in-out infinite;">
         </div>
         
-        <!-- Hero Badger -->
-        <div style="margin: -20px auto 40px; max-width: 400px;">
-            <img src="logo.png" alt="Money Badger" style="width: 280px; height: 280px; opacity: 0.9; filter: drop-shadow(0 15px 50px rgba(168, 85, 247, 0.6)); animation: float-badger 6s ease-in-out infinite;">
+        <!-- Coming Soon Badge -->
+        <div style="display: inline-block; background: linear-gradient(135deg, #4ade80 0%, #06b6d4 100%); padding: 8px 24px; border-radius: 20px; margin-bottom: 20px; font-size: 0.9em; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #0f0c1d; box-shadow: 0 5px 20px rgba(74, 222, 128, 0.4); animation: fadeInUp 1s ease 0.1s both;">
+            Coming Soon
         </div>
         
         <h1>Money Badger</h1>
