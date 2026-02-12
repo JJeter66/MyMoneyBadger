@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Badger - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            padding: 20px;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 700px;
+            width: 100%;
+        }
+        
+        .logo {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .tagline {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            opacity: 0.95;
+            line-height: 1.5;
+        }
+        
+        .description {
+            font-size: 1.1em;
+            margin-bottom: 40px;
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+        
+        .waitlist-form {
+            margin: 40px 0;
+        }
+        
+        input[type="email"] {
+            padding: 18px 25px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 450px;
+            margin-bottom: 15px;
+            font-family: inherit;
+        }
+        
+        input[type="email"]:focus {
+            outline: 3px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        button {
+            padding: 18px 50px;
+            font-size: 1.1em;
+            background: white;
+            color: #667eea;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        button:active {
+            transform: translateY(-1px);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
+            text-align: left;
+        }
+        
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .feature h3 {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+        
+        .feature p {
+            font-size: 0.95em;
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+        
+        .social {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .social h3 {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .social-links a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .launch-date {
+            margin-top: 50px;
+            font-size: 1em;
+            opacity: 0.7;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .tagline {
+                font-size: 1.2em;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🦡💰</div>
+        <h1>Money Badger</h1>
+        
+        <p class="tagline">AI-Powered Budget App That Learns From Your Spending</p>
+        
+        <p class="description">
+            No more manual transaction entry. No more spreadsheet hell. 
+            Just connect your bank, and let AI handle the rest.
+        </p>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🤖</div>
+                <h3>Smart Categorization</h3>
+                <p>96% accuracy ML model that learns from your corrections</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🏦</div>
+                <h3>Auto Bank Sync</h3>
+                <p>Connect unlimited accounts via Plaid integration</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h3>Real-Time Insights</h3>
+                <p>See exactly where your money goes, every day</p>
+            </div>
+        </div>
+
+        <div class="waitlist-form">
+            <form action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse" method="POST" target="_blank">
+                <input type="email" name="emailAddress" placeholder="Enter your email for beta access" required>
+                <br>
+                <button type="submit">Join the Waitlist</button>
+            </form>
+        </div>
+
+        <div class="social">
+            <h3>Follow the Build</h3>
+            <div class="social-links">
+                <a href="https://youtube.com/@yourchannel" target="_blank">📺 YouTube</a>
+                <a href="https://patreon.com/yourpage" target="_blank">💎 Patreon</a>
+                <a href="https://github.com/yourusername" target="_blank">💻 GitHub</a>
+            </div>
+        </div>
+
+        <p class="launch-date">Beta launching Spring 2026 • Built in public with AI</p>
+    </div>
+</body>
+</html>
